@@ -1,0 +1,33 @@
+/* 🔹 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔹 Main Layout */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100dvw;
+}
+
+/* 🔹 Content Section (Posts + Suggested Profiles) */
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100dvw;
+  padding: 20px;
+  height: 100dvh;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+}

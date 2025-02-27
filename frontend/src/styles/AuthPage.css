@@ -1,0 +1,121 @@
+/* 🔹 Ensure full viewport height */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
+  font-family: Arial, sans-serif;
+}
+
+/* 🔹 Center Authentication Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* 🔹 Paragraph inside Authentication Container */
+.auth-container p {
+  margin-top: 16px;
+}
+
+/* 🔹 Authentication Box */
+.auth-box {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 330px;
+}
+
+/* 🔹 App Title */
+.app-title {
+  font-size: 3rem;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Form Inputs */
+.auth-form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Highlight input field on focus */
+.auth-form input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* 🔹 Form Button */
+.auth-form button {
+  width: 91%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.auth-form button:hover {
+  background-color: #0056b3;
+}
+
+/* 🔹 Sign In / Sign Up Toggle Link */
+.toggle-link {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.toggle-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* 🔹 Responsive Design */
+
+/* Mobile Devices (≤ 480px) */
+@media (max-width: 480px) {
+  .auth-box {
+    max-width: 90%;
+    padding: 15px;
+  }
+  .app-title {
+    font-size: 2rem;
+  }
+  .auth-form input,
+  .auth-form button {
+    font-size: 14px;
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media (max-width: 768px) {
+  .auth-box {
+    max-width: 80%;
+  }
+  .app-title {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,158 @@
+/* 🔹 Posts Section */
+.posts-container {
+  flex: 2;
+  overflow-y: auto;
+  max-height: 80vh;
+  padding: 10px;
+}
+
+/* 🔹 New Post Input */
+.new-post {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-post-input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.new-post-input:focus {
+  border-color: #007bff;
+}
+
+.new-post-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.new-post-btn:hover {
+  background-color: #0056b3;
+}
+
+/* 🔹 Post Card */
+.post {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Post Header */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: bold;
+  color: #333;
+}
+
+/* 🔹 Post Image */
+.post-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+/* 🔹 Post Details */
+.post-details {
+  padding: 5px;
+}
+
+.caption {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* 🔹 Post Actions */
+.post-actions {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.post-actions span {
+  cursor: pointer;
+}
+
+.post-actions span:hover {
+  transform: scale(1.1);
+}
+
+/* 🔹 Comments Section */
+.comments-section {
+  margin-top: 10px;
+}
+
+.comments-list {
+  max-height: 50px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.comment {
+  font-size: 12px;
+  padding: 3px 0;
+  color: #555;
+}
+
+/* 🔹 Comment Input and Button */
+.comment-input-container {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 5px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.comment-input:focus {
+  border-color: #007bff;
+}
+
+.comment-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comment-btn:hover {
+  background-color: #0056b3;
+}

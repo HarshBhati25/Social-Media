@@ -1,0 +1,138 @@
+/* 🔹 Navbar Container */
+.navbar {
+  width: 100vw;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+}
+
+/* 🔹 Title + Logo Container */
+.nav-title-img {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 🔹 Postify Text */
+.nav-title-img h1 {
+  font-size: 1.8rem;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+/* 🔹 Logo */
+.logo {
+  height: 50px;
+}
+
+/* 🔹 Navigation Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 🔹 Profile Button */
+.profile-btn {
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.profile-btn:hover {
+  background-color: #007bff;
+  transform: scale(1.05);
+  color: white;
+}
+
+/* 🔹 Profile Info */
+.profile-info {
+  position: absolute;
+  top: 90px;
+  right: 70px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info .profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-info .profile-username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-info .profile-followers,
+.profile-info .profile-following {
+  font-size: 14px;
+}
+
+/* 🔹 Logout Button */
+.logout-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    overflow-x: scroll;
+  }
+
+  .nav-title-img h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .profile-info {
+    top: 70px;
+    right: 30px;
+  }
+
+  .profile-btn,
+  .logout-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

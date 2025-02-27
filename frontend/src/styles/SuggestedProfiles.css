@@ -1,0 +1,97 @@
+/* 🔹 Suggested Profiles */
+.suggested-container {
+  background: white;
+  padding: 15px;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Horizontal scrolling */
+  flex: 1;
+}
+
+/* 🔹 Title */
+.suggested-container h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Suggested Users Wrapper */
+.suggested-users-wrapper {
+  display: flex;
+  gap: 10px; /* Space between users */
+  width: max-content; /* Allow horizontal scrolling */
+}
+
+/* 🔹 Individual Suggested User */
+.suggested-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-width: 100px; /* Minimum width for each user */
+}
+
+/* 🔹 Profile Image */
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* 🔹 Follow Button */
+.follow-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.follow-btn:hover {
+  background: #0056b3;
+}
+
+/* 🔹 Following Button (Changes to grey when following) */
+.follow-btn.following {
+  background: #ccc;
+  color: #666;
+}
+
+.follow-btn.following:hover {
+  background: #bbb;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .suggested-container {
+    padding: 5px;
+    max-width: 430px;
+    margin-bottom: 1rem;
+    width: 100%; /* Full width on smaller devices */
+  }
+
+  .suggested-container h3 {
+    font-size: 14px;
+  }
+
+  .suggested-users-wrapper {
+    gap: 8px; /* Reduce gap for smaller screens */
+  }
+
+  .suggested-user {
+    min-width: 80px; /* Smaller width for each user */
+  }
+
+  .profile-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .follow-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
